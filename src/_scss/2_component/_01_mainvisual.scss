@@ -1,0 +1,36 @@
+// Main visual 
+.c-mainvisual {
+    padding-top: 327px;
+    min-height: 1052px;
+    height: 100vh;
+    background: url("./assets/img/background_main.png") top center no-repeat;
+    background-size: cover;
+
+    .c-mainvisual__inner {
+        padding: 114px 0 100px;
+        margin-left: 39.6%;
+        max-width: 434px;
+        max-height: 461px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .c-mainvisual__title {
+        font-size: 2rem;
+        font-weight: 700;
+        @include NotoSerifJPFont;
+        padding-top: 49px;
+        margin-left: -22px;
+        letter-spacing: -1.3px;
+        padding-bottom: 31px;
+
+        &--fixspacing {
+            letter-spacing: -2px;
+            margin-left: -10px;
+        }
+    }
+
+    .c-mainvisual__img {
+        margin-left: 10px;
+    }
+}
