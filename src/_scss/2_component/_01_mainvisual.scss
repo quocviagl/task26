@@ -18,11 +18,11 @@
     .c-mainvisual__title {
         font-size: 2rem;
         font-weight: 700;
-        @include NotoSerifJPFont;
-        padding-top: 49px;
+        @include notoserif;
+        padding-top: 54px;
         margin-left: -22px;
         letter-spacing: -1.3px;
-        padding-bottom: 31px;
+        padding-bottom: 37px;
 
         &--fixspacing {
             letter-spacing: -2px;

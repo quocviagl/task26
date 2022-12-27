@@ -6,6 +6,7 @@
 @import "0_base/vars";
 @import "0_base/reset";
 @import "0_base/mixin";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Oswald:wght@300&family=Roboto:wght@700&display=swap");
 
 .sp-only {
     display: none;
@@ -33,9 +34,9 @@
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "2_component/01_mainvisual";
-@import "2_component/02_title";
-@import "2_component/03_icon";
-@import "2_component/04_form";
+@import "2_component/02_cases";
+@import "2_component/_03_recommendedpoint";
+@import "2_component/04_present";
 @import "2_component/05_text";
 @import "2_component/06_navi";
 @import "2_component/07_img";

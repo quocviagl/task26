@@ -1,0 +1,252 @@
+.c-cases {
+    background-image: url("./assets/img/case/grid_bg.png");
+    padding-top: 4%;
+
+    .c-cases__title {
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    .c-cases__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-cases__item {
+        width: calc((100% - 114px) / 3);
+
+        &:nth-child(1) {
+            margin-left: 0.7%;
+        }
+
+        &:nth-child(3) {
+            margin-right: -0.1%;
+        }
+
+        .c-cases__top {
+            position: relative;
+        }
+    
+        .c-cases__text {
+            @include roboto;
+
+            &--number {
+                font-size: 21.3rem;
+                color: #ededed;
+                line-height: 1.1999812664;
+                font-weight: 600;
+                padding-left: 4.5%;
+                padding-top: 3px;
+            }
+
+            &--case {
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: #c7c7c7;
+                position: absolute;
+                bottom: 28.5%;
+                left: 23%;
+                letter-spacing: 6px;
+            
+            }
+        }
+
+        .c-cases__bottom {
+            position: relative;
+            margin-top: -5.8%;
+        }
+
+        .c-cases__question {
+            font-size: 2.4rem;
+            font-weight: 700;
+            max-width: 474px;
+            width: 100%;
+            line-height: 1.2;
+            background: #000;
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding: 49px 10px;
+            border-radius: 8px;
+            margin-top: 4.5px;
+            letter-spacing: -0.05em;
+            height: 30%;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 30px solid #000;
+                top: -28px;
+                left: 134px;
+            }
+        }
+
+        .c-cases__label {
+            position: absolute;
+            font-size: 1.8rem;
+            background: #7a89a8;
+            max-width: 212px;
+            font-weight: 400;
+            line-height: 1.2;
+            width: 100%;
+            display: block;
+            text-align: center;
+            border-radius: 100px;
+            padding: 8px 0 6px;
+            top: -13px;
+            right: -3px;
+            color: #fff;
+            letter-spacing: -0.03em;
+        }
+    }
+    // BENEFIT CSS
+    .c-cases__benefit {
+        .u-colored {
+            font-size: 3.6rem;
+            font-weight: 700;
+            color: #252a6d;
+            margin-left: -5px;
+        }
+        margin-top: 6.2%;
+
+        .c-benefit__title {
+            text-align: center;
+            font-size: 3.4rem;
+            font-weight: 400;
+            color: #231815;
+
+            &--colored {
+                font-size: 4.6rem;
+                @include notoserif;
+                font-weight: 400;
+                color: #252a6d;
+            }
+
+        }
+
+        .c-benefit__subtitle {
+            font-size: 4.8rem;
+            text-align: center;
+            color: #000;
+            @include oswald;
+            font-weight: 300;
+            padding-top: 1.3%;
+            letter-spacing: 4.5px;
+            margin-left: 1.5%;
+        }
+
+        .c-benefit__list {
+            padding-top: 3.9%;
+        }
+
+        .c-benefit__item {
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:first-child) {
+                padding-top: 5.4%;
+            }
+
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+
+                .c-benefit__itemtitle {
+                    &::before {
+                        right: 8.3%;
+                    }
+                }
+
+                .c-benefit__label {
+                    margin-top: 1px;
+                }
+
+                .c-benefit__img {
+                    object-position: 87% 43%;
+                    margin-left: 0.5%;
+
+                }
+
+                .c-benefit__content {
+                    margin: 5px -30px 0 86px;
+                }
+
+                .u-colored {
+                    margin-left: -1px;
+                }
+            }
+
+            &:nth-child(3) {
+                padding-top: 5.5%;
+
+                .c-benefit__itemtitle {
+                    &::before {
+                        right: 2%;
+                    }
+                }
+
+                .u-colored {
+                    margin-left: 0;
+                }
+
+                .c-benefit__img {
+                    object-position: 66% 45%;
+                    margin-top: 2.54%;
+                }
+            }
+        }
+
+        .c-benefit__label {
+            margin-left: 4px;
+
+        }
+
+        .c-benefit__content {
+            margin: 5px 0 0 86px;
+            max-width: 520px;
+        }
+
+        .c-benefit__itemtitle {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #231815;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -40%;
+                right: 13.2%;
+                background: url("./assets/img/modelhouse/popup.png") no-repeat;
+                width: 41px;
+                height: 34px;
+                background-size: 100%;
+            }
+        }
+
+        .c-benefit__description {
+            font-size: 2.1rem;
+            font-weight: 400;
+            color: #231815;
+            padding-top: 4.5%;
+            line-height: 1.63;
+            letter-spacing: 0.7px;
+        }
+
+        .c-benefit__img {
+            max-width: 531px;
+            max-height: 343px;
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+            margin-top: 2.45%;
+            object-position: 44% 66%;
+            margin-right: 0.1%;
+        }
+    }
+}

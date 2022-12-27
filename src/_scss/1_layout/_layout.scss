@@ -1,7 +1,7 @@
 /* layout
 ------------------------------------------------------------*/
-#p-top {
-    font-family: "Noto Sans JP", sans-serif;
+body {
+    @include notosans;
     font-size: 1.4rem;
     min-width: $base-width;
     line-height: 1.5;
@@ -20,9 +20,27 @@
 
 .l-container--1200 {
     max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--1204 {
+    max-width: 120.4rem;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.l-container--1550 {
+    width: 100%;
+    max-width: 155rem;
+    margin: 0 auto;
+
 }
 
 .l-container--1740 {
     max-width: 174rem;
+    width: 100%;
+    margin: 0 auto;
 }
 //-------------------------------------------------------

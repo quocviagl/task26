@@ -25,3 +25,21 @@
         @content;
     }
 }
+
+//============================================
+// font
+//============================================
+
+
+@mixin notosans {
+    font-family: "Noto Sans JP", sans-serif;
+}
+@mixin notoserif {
+    font-family: "Noto Serif JP", serif;
+}
+@mixin roboto {
+    font-family: "Roboto", sans-serif;
+}
+@mixin oswald {
+    font-family: "Oswald", sans-serif;
+}
