@@ -1,0 +1,22 @@
+.slick-arrow {
+    padding: 0;
+    border: hidden;
+}
+
+.slick-prev {
+    position: absolute;
+    left: calc(100% - 126px);
+    bottom: -13%;
+    background: url("./assets/img/slick/previous.svg");
+    width: 53px;
+    height: 53px;
+}
+
+.slick-next {
+    position: absolute;
+    left: calc(100% - 53px);
+    bottom: -13%;
+    background: url("./assets/img/slick/next.svg");
+    width: 53px;
+    height: 53px;
+}

@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+.l-slider {
+    max-width: 1440px;
+}
+
 .l-container--1200 {
     max-width: 120rem;
     width: 100%;
@@ -29,6 +33,12 @@ body {
     width: 100%;
     margin: 0 auto;
 
+}
+
+.l-container--1400 {
+    max-width: 140rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .l-container--1550 {
