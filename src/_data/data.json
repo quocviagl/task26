@@ -1,0 +1,47 @@
+{
+    "preventionlist":{
+        "prevention":[
+            {
+                "img":"./assets/img/prevention/door.svg",
+                "description":"常時店内・モデルハウス<br>換気中"
+            },
+            {
+                "img":"./assets/img/prevention/facemask.svg",
+                "description":"スタッフの<br>マスク着用義務化"
+            },
+            {
+                "img":"./assets/img/prevention/facemask2.svg",
+                "description":"お客様へのマスク着用<br>をお願いしています"
+            },
+            {
+                "img":"./assets/img/prevention/people.svg",
+                "description":"ソーシャルディスタンス<br>（2m）を維持した打合せ"
+            },
+            {
+                "img":"./assets/img/prevention/pen.svg",
+                "description":"発熱のあるスタッフ・<br>お客様の出社・入店禁止"
+            },
+            {
+                "img":"./assets/img/prevention/star.svg",
+                "description":"こまめな除菌"
+            },
+            {
+                "img":"./assets/img/prevention/sick.svg",
+                "description":"咳エチケットを<br>徹底しています"
+            },
+            {
+                "img":"./assets/img/prevention/hand.svg",
+                "description":"スタッフ・お客様<br>アルコール除菌"
+            },
+            {
+                "img":"./assets/img/prevention/meeting.svg",
+                "description":"web設計打合せを<br>推奨しています"
+            },
+            {
+                "img":"./assets/img/prevention/zoom.svg",
+                "description":"webおうち相談会を<br>推奨しています"
+            }
+        ]
+    }
+
+}

@@ -166,7 +166,9 @@
 <!-- END RECOMMENDED -->
 <!-- PRESENT SECTION -->
 <section class="c-present l-container--1204">
-  <a href="./"><img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner"></a>
+  <h2>
+    <a href="./"><img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner"></a>
+  </h2>
 </section>
 <!--END PRESENT SECTION -->
 <!-- DESIGN SECTION -->
@@ -252,7 +254,10 @@
   <div class="l-container--1400">
     <div class="c-finance__heading">
       <h2 class="c-finance__title">finance</h2>
-      <h3 class="c-finance__label">3,400万円借入の場合</h3>
+      <h3 class="c-finance__label">
+        <span class="c-finance__label--number">3,400</span>
+        <span class="c-fianance__label--text">万円借入の場合</span>
+      </h3>
     </div>
     <div class="c-finance__content">
       <div class="c-finance__box c-finance__box--leftbox">
@@ -275,6 +280,111 @@
       </div>
     </div>
   </div>
+</section>
+<!-- END FINANCE SECTION -->
+<!-- BOOKING SECTION -->
+<section class="c-booking l-container--1740">
+  <div class="c-booking__heading">
+    <h2 class="c-booking__title">
+      <span class="c-booking__title--normal">WEB来場予約が</span>
+      <span class="c-booking__title--colored">オススメ！</span>
+    </h2>
+    <h3 class="c-booking__subtitle">待ち時間ナシ！混雑をきにせず来場 OK ！<br>
+      <span class="c-booking__subtitle--bottom">経験豊富なスタッフがしっかりとご対応いたします。</span>
+    </h3>
+  </div>
+  <!-- BOOKING STEPS -->
+  <div class="c-booking__steps">
+  <!-- STEP 1 -->
+    <a href="#" class="c-booking__item">
+        <img src="./assets/img/booking/mail.svg" alt="WEB予約" class="c-booking__img">
+        <p class="c-booking__stepname">WEB 予約</p>
+        <p class="c-booking__description">入力フォームに必要事項を入力</p>
+    </a>
+  <!-- STEP 2 -->
+    <a href="#" class="c-booking__item">
+      <img src="./assets/img/booking/account.svg" alt="ご来場" class="c-booking__img">
+      <p class="c-booking__stepname">ご来場</p>
+      <p class="c-booking__description">来場されたら受付をお願いします</p>
+    </a>
+  <!-- STEP 3 -->
+    <a href="#" class="c-booking__item">
+      <img src="./assets/img/booking/note.svg" alt="アンケート記入" class="c-booking__img">
+      <p class="c-booking__stepname">アンケート記入</p>
+      <p class="c-booking__description">アンケート記入後、丁寧にご説明</p>
+    </a>
+  <!-- STEP 4 -->
+    <a href="#" class="c-booking__item">
+      <img src="./assets/img/booking/paper.svg" alt="ご見学・ご説明" class="c-booking__img">
+      <p class="c-booking__stepname">ご見学・ご説明</p>
+      <p class="c-booking__description">何でもお気軽に相談してください</p>
+    </a>
+  <!-- STEP 5 -->
+    <a href="#" class="c-booking__item">
+      <img src="./assets/img/booking/gift.svg" alt="特典プレゼント！" class="c-booking__img">
+      <p class="c-booking__stepname">特典プレゼント！</p>
+      <p class="c-booking__description">QUOカードプレゼント</p>
+    </a>
+  </div>
+  <!-- PREVENTION -->
+  <div class="c-prevention l-container--1204">
+    <div class="c-prevention__content">
+      <div class="c-prevention__heading">
+        <div class="c-prevention__heading--top">
+          <a href="#" class="c-prevention__btn">ご来場のお客様へ</a>
+          <h2 class="c-prevention__title">新型コロナウイルス感 染症予 防対 策につきまして</h2>
+        </div>
+        <h3 class="c-prevention__subtitle">ウェブココでは 新型 コロナウイルス感 染拡 大防 止 のため、対策を講じておりますので安心してご利用ください。</h3>
+      </div>
+        <!-- PREVENTION LIST-->
+      <div class="c-prevention__list">
+      <% if (typeof preventionlist != 'undefined') {%>
+        <%   preventionlist.prevention.forEach(item => {%>
+            <div class="c-prevention__item">
+              <img src="<%= item.img %>" alt="<%= item.description %>" class="c-prevention__img">
+              <p class="c-prevention__description"><%- item.description %></p>
+            </div>
+          <%}) %>
+      <%}%>
+      </div>  
+    </div>
+  </div>
+  <!-- END PREVENTION -->
+</section>
+<!-- END BOOKING SECTION -->
+<section class="c-access l-container">
+  <div class="c-access__item c-access__item--map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1443.784265239976!2d139.7749091942118!3d35.67242026142928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018895f7235976d%3A0x502e204dfef6e7fd!2z5pel5ZKM44Ob44OG44Or5p2x5Lqs6YqA5bqnRUFTVA!5e0!3m2!1sja!2s!4v1660026983187!5m2!1sja!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="c-access__map"></iframe>
+  </div>
+  <div class="c-access__item c-access__item--text">
+    <div class="c-access__heading">
+      <h2 class="c-access__title">access</h2>
+      <h3 class="c-access__subtitle">完全ご予約制見学会</h3>
+    </div>
+    <div class="c-access__contentlist">
+      <dl class="c-access__content">
+        <dt class="c-access__label">開催日</dt>
+        <dd class="c-access__description">8月20日 (土) <span class="c-access__description--fixspacing">・21日 &nbsp;(日)</span></dd>
+      </dl>
+      <dl class="c-access__content">
+        <dt class="c-access__label">時間</dt>
+        <dd class="c-access__description">10：00 ～ 17：00 ※完全予約制</dd>
+      </dl>
+      <dl class="c-access__content">
+        <dt class="c-access__label">開催場所</dt>
+        <dd class="c-access__description">〒000- 0000 愛媛県今治市 000-0</dd>
+      </dl>
+    </div>
+    <p class="c-access__note">※車でお越しの際は、ナビで上記住所を設定してください。</p>
+  </div>
+</section>
+<section class="c-present c-present--footer l-container--1204">
+  <h2><a href="./"><img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner"></a></h2>
+</section>
+<section class="c-contact l-container--1204">
+  <a href="#">
+    <h2 class="c-contact__title">contact form</h2>
+  </a>
 </section>
 </main>
 <!-- @@content -->

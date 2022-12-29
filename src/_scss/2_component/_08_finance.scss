@@ -1,6 +1,6 @@
 .c-finance {
     margin-top: 4.95%;
-    padding-bottom: 5.8%;
+    padding-bottom: 5.65%;
     background: url("./assets/img/finance/finance_bg.png");
 
     .c-finance__title {
@@ -33,15 +33,16 @@
     .c-finance__label {
         font-size: 3rem;
         font-weight: 400;
+        @include kozukamedium;
         color: #fff;
         background-color: #231815;
         display: inline-block;
         max-width: 410px;
         width: 100%;
         height: 65px;
-        margin: 6% 0 0 0.6%;
-        letter-spacing: 1px;
-        padding-top: 0.3%;
+        margin: 5.95% 0 0 0.6%;
+        letter-spacing: 0.5px;
+        padding-top: 0.5%;
     }
 
     .c-finance__content {
@@ -51,15 +52,16 @@
     }
 
     .c-finance__box {
-        width: calc((100% - 196px) / 2);
+        width: calc((100% - 190px) / 2);
         background: #fff;
-        padding: 88px 0 67px 86px;
+        padding: 89px 0 67px 86px;
         position: relative;
         letter-spacing: 0.8px;
         color: #231815;
 
         &--leftbox {
             margin-left: 0.6%;
+            left: 3px;
         }
 
         &--rightbox {
@@ -67,6 +69,7 @@
             margin-left: -10px;
             margin-right: 2.6%;
             padding: 102px 0 67px 86px;
+            left: -1px;
             
         }
     }
@@ -76,26 +79,31 @@
         font-weight: 400;
         color: #231815;
         line-height: 3.15;
-        letter-spacing: -0.25px;
+        letter-spacing: -0.5px;
     }
 
     .c-finance__smalltitle {
         font-size: 2.6rem;
         font-weight: 700;
         color: #231815;
-        margin-left: 4px;
+        margin-left: 8px;
         letter-spacing: 0;
     }
 
     .c-finance__number {
+        @include kozuka;
+        margin-left: 1px;
         font-size: 9rem;
         font-weight: 700;
         color: #7a89a8;
-        letter-spacing: -3px;
+        margin-top: 1%;
+        letter-spacing: 0;
 
         &--unit {
             font-size: 3.6rem;
-            margin-left: 12px;
+            position: relative;
+            top: 2px;
+            left: 9px;
         }
     }
 
@@ -103,14 +111,14 @@
         font-size: 2.2rem;
         font-weight: 400;
         color: #231815;
-        margin-top: 3%;
+        margin-top: 2.4%;
         letter-spacing: -0.4px;
     }
 
     .c-finance__bubble {
         position: absolute;
-        top: -19px;
-        right: -45px;
+        top: -18px;
+        right: -44px;
         background: #7a89a8;
         color: #fff;
         font-weight: 700;
