@@ -3,13 +3,13 @@
     max-width: 1196px;
     position: relative;
     left: 5px;
-    padding: 5.5% 0;
     border: 1px solid #000;
     margin-top: 4.8%;
     left: 2px;
 
     .c-contact__title {
         text-transform: uppercase;
+        padding: 8.85% 0;
         font-size: 4.8rem;
         @include oswald;
         font-weight: 300;
