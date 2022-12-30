@@ -30,30 +30,3 @@
 // font
 //============================================
 
-
-@mixin notosans {
-    font-family: "Noto Sans JP", sans-serif;
-}
-@mixin notoserif {
-    font-family: "Noto Serif JP", serif;
-}
-@mixin roboto {
-    font-family: "Roboto", sans-serif;
-}
-@mixin oswald {
-    font-family: "Oswald", sans-serif;
-}
-@font-face {
-    font-family: "Kozuka Gothic Pr6N";
-    src: url("./assets/font/KozGoPr6N-Bold.otf");
-}
-@font-face {
-    font-family: "Kozuka Gothic Pr6N Medium";
-    src: url("./assets/font/KozGoPr6N-Medium.otf");
-}
-@mixin kozuka {
-    font-family: "Kozuka Gothic Pr6N", sans-serif;
-}
-@mixin kozukamedium {
-    font-family: "Kozuka Gothic Pr6N Medium", sans-serif;
-}

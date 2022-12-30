@@ -18,7 +18,7 @@
     .c-mainvisual__title {
         font-size: 2rem;
         font-weight: 700;
-        @include notoserif;
+        font-family: $notoserif;
         padding-top: 54px;
         margin-left: -22px;
         letter-spacing: -1.3px;

@@ -1,5 +1,20 @@
 //baseWidth
 $base-width: 1000px;
+//font
+@font-face {
+    font-family: "Kozuka Gothic Pr6N";
+    src: url("./assets/font/KozGoPr6N-Bold.otf");
+}
+@font-face {
+    font-family: "Kozuka Gothic Pr6N Medium";
+    src: url("./assets/font/KozGoPr6N-Medium.otf");
+}
 
 
+$main-font: "Noto Sans JP", sans-serif;
+$notoserif: "Noto Serif JP", serif;
+$roboto: "Roboto", sans-serif;
+$oswald: "Oswald", sans-serif;
+$kozuka: "Kozuka Gothic Pr6N",sans-serif;
+$kozukamedium: "Kozuka Gothic Pr6N Medium",sans-serif;
 //color common

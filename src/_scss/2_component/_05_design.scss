@@ -15,12 +15,14 @@
     }
 
     .c-design__content {
+        max-width: 1600px;
         margin: 0;
         margin-left: auto;
+        padding-left: 2.6%;
         margin-top: 4.1%;
         display: flex;
-        column-gap: 9.3%;
-
+        column-gap: 9.25%;
+        
         .c-design__text {
             margin-left: -0.4%;
         }
@@ -29,7 +31,7 @@
             text-transform: uppercase;
             font-size: 4.8rem;
             font-weight: 300;
-            @include oswald;
+            font-family: $oswald;
             color: #000;
             letter-spacing: 4.8px;
             position: relative;
@@ -63,7 +65,7 @@
         }
 
         .c-design__video {
-            margin-top: 7.4%;
+            margin-top: 7.43%;
             width: 702px;
             height: 390px;
 

@@ -6,7 +6,7 @@
     .c-finance__title {
         text-transform: uppercase;
         font-size: 4.8rem;
-        @include oswald;
+        font-family: $oswald;
         font-weight: 300;
         color: #000;
         letter-spacing: 4.5px;
@@ -33,7 +33,7 @@
     .c-finance__label {
         font-size: 3rem;
         font-weight: 400;
-        @include kozukamedium;
+        font-family: $kozukamedium;
         color: #fff;
         background-color: #231815;
         display: inline-block;
@@ -91,7 +91,7 @@
     }
 
     .c-finance__number {
-        @include kozuka;
+        font-family: $kozuka;
         margin-left: 1px;
         font-size: 9rem;
         font-weight: 700;

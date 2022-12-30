@@ -16,7 +16,7 @@
             }
 
             &--colored {
-                @include notoserif;
+                font-family: $notoserif;
                 font-size: 4.6rem;
                 font-weight: 400;
                 color: #252a6d;

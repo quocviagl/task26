@@ -21,7 +21,7 @@
             text-transform: uppercase;
             font-size: 4.8rem;
             font-weight: 300;
-            @include oswald;
+            font-family: $oswald;
             color: #000;
             position: relative;
             letter-spacing: 4.5px;
