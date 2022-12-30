@@ -71,7 +71,9 @@
 
     .c-plan__img {
         object-fit: none;
-
+        @include fixpc{
+            object-fit: cover;
+        }
         &--left {
             margin-left: 2.8%;
         }

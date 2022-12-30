@@ -1,7 +1,7 @@
 .c-cases {
     background-image: url("./assets/img/case/grid_bg.png");
     padding-top: 4%;
-
+    width: 90%;
     .c-cases__title {
         font-size: 3.6rem;
         font-weight: 400;
@@ -12,17 +12,18 @@
     .c-cases__list {
         display: flex;
         justify-content: space-between;
+
     }
 
     .c-cases__item {
-        width: calc((100% - 114px) / 3);
+        width: calc((100% - 121px) / 3);
 
         &:nth-child(1) {
             margin-left: 0.7%;
         }
 
         &:nth-child(3) {
-            margin-right: -0.1%;
+            margin-right: 2px;
         }
 
         .c-cases__top {
@@ -56,12 +57,14 @@
         .c-cases__bottom {
             position: relative;
             margin-top: -5.8%;
+            height: 115%;
         }
 
         .c-cases__question {
             font-size: 2.4rem;
             font-weight: 700;
             max-width: 474px;
+            max-height: 155px;
             width: 100%;
             line-height: 1.2;
             background: #000;
@@ -73,7 +76,13 @@
             margin-top: 4.5px;
             letter-spacing: -0.05em;
             height: 30%;
-
+            position: relative;
+            &--marginleft{
+                position: relative;
+                left: -11px;
+                letter-spacing: -2.1px;
+            }
+            
             &::before {
                 position: absolute;
                 content: "";
@@ -99,21 +108,21 @@
             text-align: center;
             border-radius: 100px;
             padding: 8px 0 6px;
-            top: -13px;
-            right: -3px;
+            top: -14px;
+            right: -7px;
             color: #fff;
-            letter-spacing: -0.03em;
+            letter-spacing: -1.8px;
         }
     }
     // BENEFIT CSS
     .c-cases__benefit {
+        margin-top: 6.8%;
         .u-colored {
             font-size: 3.6rem;
             font-weight: 700;
             color: #252a6d;
             margin-left: -5px;
         }
-        margin-top: 6.2%;
 
         .c-benefit__title {
             text-align: center;

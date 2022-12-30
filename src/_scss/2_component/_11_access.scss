@@ -64,7 +64,10 @@
         gap: 20px;
         padding-right: 52px;
         margin-bottom: 1.2%;
-
+        @include fixpc{
+            padding-right: 0;
+            padding-left: 10px;
+        }
         &:nth-child(1) {
             .c-access__description {
                 letter-spacing: 4.5px;

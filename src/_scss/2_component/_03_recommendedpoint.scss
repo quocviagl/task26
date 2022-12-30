@@ -1,35 +1,45 @@
 .c-recommended {
     background: url("./assets/img/recommend/recommended_bg.png");
     margin-top: 8.6%;
-
+    position: relative;
+    padding-top: 9.7%;
+    @include fixpc{
+        padding-top: 16%;
+    }
     .c-recommended__top {
         text-align: right;
-        position: relative;
-        top: -81px;
         padding: 0 45px 0 500px;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -46.5%;
-            left: 11.8%;
-            background: url("./assets/img/recommend/recommend-point_bg.png") no-repeat;
-            width: 465px;
-            height: 290px;
-            background-size: 100%;
+    }
+    .c-recommended__car{
+        position: absolute;
+        left: 11.8%;
+        top: -22.2%;
+        @include fixpc{
+            width: 30%;
+            left: 4.8%;
+            top: -12.2%;
         }
     }
-
     .c-recommended__title {
+        position: absolute;
+        right: 2.6%;
+        top: -10.9%;
         font-size: 8.3rem;
         letter-spacing: 8.2px;
         font-weight: 300;
         color: #000;
         text-transform: uppercase;
         font-family: $oswald;
+        @include fixpc{
+            font-size: 6.3rem;
+            top: -7.9%;
+        }
     }
 
     .c-recommended__subtitle {
+        position: absolute;
+        right: 2.65%;
+        top: 5.5%;
         font-size: 3.4rem;
         font-weight: 400;
         color: #231815;
@@ -54,7 +64,7 @@
     }
 
     .c-recommended__item {
-        max-width: 378px;
+        max-width: 377px;
         width: 100%;
         padding: 22px 20px 44px;
         background-color: #fff;
@@ -65,12 +75,17 @@
 
         &:nth-child(1) {
             .c-item__title {
-                letter-spacing: 0.95px;
+                letter-spacing: 0.5px;
             }
 
             .c-item__description {
                 letter-spacing: 0.2px;
-                padding-left: 1%;
+                padding-right: 3px;
+            }
+        }
+        &:nth-child(3){
+            .c-item__title{
+                letter-spacing: -0.3px;
             }
         }
     }
@@ -91,6 +106,6 @@
     }
 
     .c-item__bottom {
-        margin-top: 7%;
+        margin-top: 6.7%;
     }
 }

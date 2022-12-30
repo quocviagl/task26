@@ -29,6 +29,9 @@
             padding: 9px 27px;
             margin-left: 7.3%;
             border-radius: 23px;
+            @include fixpc{
+                font-size: 1.8rem;
+            }
         }
 
         .c-prevention__title {
@@ -38,6 +41,9 @@
             font-weight: 300;
             color: #fff;
             margin-right: 7.96%;
+            @include fixpc{
+                font-size: 2.8rem;
+            }
         }
 
         .c-prevention__subtitle {

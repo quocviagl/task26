@@ -62,6 +62,9 @@
         &--leftbox {
             margin-left: 0.6%;
             left: 3px;
+            @include fixpc{
+                padding: 62px 2px;
+            }
         }
 
         &--rightbox {
@@ -70,7 +73,9 @@
             margin-right: 2.6%;
             padding: 102px 0 67px 86px;
             left: -1px;
-            
+            @include fixpc{
+                padding:75px 0 67px 40px
+            }
         }
     }
 
@@ -127,7 +132,13 @@
         height: 200px;
         text-align: center;
         padding-top: 26px;
+        @include fixpc{
+            top: -30px;
+            right: -44px;
+            width: 180px;
+            height: 180px;
 
+        }
         &::before {
             content: "";
             background: url("./assets/img/finance/bubble_corner.svg") top right no-repeat;
@@ -136,6 +147,10 @@
             position: absolute;
             top: 135px;
             left: -7px;
+            @include fixpc{
+                    top: 125px;
+                    left: 0px;
+            }
         }
 
         .c-bubble__heading {
