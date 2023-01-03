@@ -2,6 +2,9 @@
     margin-top: 4.95%;
     padding-bottom: 5.65%;
     background: url("./assets/img/finance/finance_bg.png");
+    @include tab {
+        padding-bottom: 15%;
+    }
 
     .c-finance__title {
         text-transform: uppercase;
@@ -49,6 +52,11 @@
         display: flex;
         justify-content: space-around;
         margin-top: 3.2%;
+        @include tab {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 80px;
+        }
     }
 
     .c-finance__box {
@@ -62,8 +70,14 @@
         &--leftbox {
             margin-left: 0.6%;
             left: 3px;
-            @include fixpc{
+            @include fixpc {
                 padding: 62px 2px;
+            }
+            @include tab {
+                max-width: 410px;
+                width: 100%;
+                padding: 62px 24px;
+                margin: 0;
             }
         }
 
@@ -73,8 +87,12 @@
             margin-right: 2.6%;
             padding: 102px 0 67px 86px;
             left: -1px;
-            @include fixpc{
-                padding:75px 0 67px 40px
+            @include fixpc {
+                padding: 75px 0 67px 40px;
+            }
+            @include tab {
+                padding: 75px 0 67px 40px;
+                margin: 0;
             }
         }
     }
@@ -85,6 +103,9 @@
         color: #231815;
         line-height: 3.15;
         letter-spacing: -0.5px;
+        @include tab {
+            font-size: 1.9rem;
+        }
     }
 
     .c-finance__smalltitle {
@@ -103,6 +124,9 @@
         color: #7a89a8;
         margin-top: 1%;
         letter-spacing: 0;
+        @include tab {
+            margin-top: 4%;       
+        }
 
         &--unit {
             font-size: 3.6rem;
@@ -118,6 +142,9 @@
         color: #231815;
         margin-top: 2.4%;
         letter-spacing: -0.4px;
+        @include tab {
+            font-size: 1.9rem;
+        }
     }
 
     .c-finance__bubble {
@@ -132,13 +159,19 @@
         height: 200px;
         text-align: center;
         padding-top: 26px;
-        @include fixpc{
+        @include fixpc {
             top: -30px;
             right: -44px;
             width: 180px;
             height: 180px;
-
         }
+        @include tab {
+            top: -30px;
+            right: -25px;
+            width: 180px;
+            height: 180px;
+        }
+
         &::before {
             content: "";
             background: url("./assets/img/finance/bubble_corner.svg") top right no-repeat;
@@ -147,9 +180,13 @@
             position: absolute;
             top: 135px;
             left: -7px;
-            @include fixpc{
-                    top: 125px;
-                    left: 0px;
+            @include fixpc {
+                top: 125px;
+                left: 0;
+            }
+            @include tab {
+                top: 130px;
+                left: 6px;
             }
         }
 

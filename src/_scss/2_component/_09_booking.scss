@@ -46,6 +46,16 @@
         padding-left: 1.8%;
         padding-right: 1.6%;
         margin-top: 4%;
+        @include tab {
+            max-width: 970px;
+            margin: 0 auto;
+            margin-top: 5%;
+            flex-wrap: wrap;
+            justify-content: unset;
+            gap: 55px;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     .c-booking__item {
@@ -56,6 +66,10 @@
         font-weight: 400;
         color: #fff;
         position: relative;
+        @include tab {
+            max-width: 270px;
+            width: 100%;
+        }
 
         &:not(:last-child)::before {
             position: absolute;
@@ -213,9 +227,10 @@
         font-size: 2.1rem;
         position: relative;
         letter-spacing: -0.5px;
-        @include fixpc{
+        @include fixpc {
             font-size: 1.8rem;
         }
+
         &::before {
             position: absolute;
             content: "";

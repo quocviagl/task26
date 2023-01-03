@@ -1,6 +1,12 @@
 .c-present {
     margin-top: 6.1%;
     text-align: center;
+    @include tab {
+        margin-top: 15%;
+    }
+    @include sp {   
+        padding: 38px 28px 26px;
+    }
 
     &--footer {
         margin-top: 4.6%;

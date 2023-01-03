@@ -1,7 +1,11 @@
 .c-design {
     margin-top: 6.4%;
     position: relative;
-
+    @include sp{
+        width: 95.8%;
+        margin: 0;
+        margin-top: 24px;
+    }
     &::before {
         content: "";
         background: #ededed;
@@ -12,8 +16,18 @@
         top: calc(100% - 696px);
         right: 0;
         z-index: -1;
-    }
+        @include tab {
+            top: 24%;
 
+        }
+    }
+    .c-design__slider{
+        @include sp{
+            .c-design__img{
+                height: 200px;
+        }
+    }
+    }
     .c-design__content {
         max-width: 1600px;
         margin: 0;
@@ -22,7 +36,17 @@
         margin-top: 4.1%;
         display: flex;
         column-gap: 9.25%;
-        
+        @include tab {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include sp{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 14.1%;
+            padding-left: 9.2%;
+        }
+
         .c-design__text {
             margin-left: -0.4%;
         }
@@ -35,7 +59,11 @@
             color: #000;
             letter-spacing: 4.8px;
             position: relative;
-
+            @include sp{
+                font-size: 2.4rem;
+                letter-spacing: 2.4px;
+                
+            }
             &::after {
                 content: "";
                 background: #c8c5c4;
@@ -45,6 +73,9 @@
                 bottom: -38%;
                 left: 0;
                 transform: inherit;
+                @include sp{
+                    width: 29px;
+                }
             }
         }
 
@@ -54,6 +85,9 @@
             color: #231815;
             margin-top: 8.33%;
             line-height: 1.4;
+            @include sp{
+                font-size: 1.35rem;
+            }
         }
 
         .c-design__description {
@@ -62,12 +96,23 @@
             color: #231815;
             margin-top: 5.4%;
             line-height: 1.8;
+            @include sp{
+                font-size: 1rem;
+                line-height: 1.7;
+                margin-right: -3px;
+            }
         }
 
         .c-design__video {
             margin-top: 7.43%;
             width: 702px;
             height: 390px;
+            @include sp{
+                margin-top: 15.43%;
+                margin-left: -16px;
+                width: 302px;
+                height: 168px;
+            }
 
             &--frame {
                 width: 100%;

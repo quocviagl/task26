@@ -9,7 +9,7 @@
 <!-- MAINVISUAL -->
   <section class="c-mainvisual l-container">
     <div class="c-mainvisual__inner">
-      <a href="./" class="c-mainvisual__logo"><img src="./assets/img/CocoLogo.png" alt="Coco Design"></a>
+      <a href="./" ><img src="./assets/img/CocoLogo.png" alt="Coco Design" class="c-mainvisual__logo"></a>
       <h1 class="c-mainvisual__title" >「こんな家に住みたい」<span class="c-mainvisual__title--fixspacing">をカタチにした家</span></h1>
       <img src="./assets/img/nowopen.png" alt="NOW OPEN" class="c-mainvisual__img">
     </div>
@@ -75,8 +75,9 @@
               </p>
             </div>
           </div>
-          <img src="./assets/img/modelhouse/model1.jpg" alt="実物を見て触って体感できます" class="c-benefit__img">
+        <div class="c-benefit__imgbox"><img src="./assets/img/modelhouse/model1.jpg" alt="実物を見て触って体感できます" class="c-benefit__img">
         </div>
+      </div>
         <!-- Benefit 2 -->
         <div class="c-benefit__item">
           <div class="c-benefit__text">
@@ -90,7 +91,7 @@
               </p>
             </div>
           </div>
-          <img src="./assets/img/modelhouse/model2.jpg" alt="実物を見て触って体感できます" class="c-benefit__img">
+          <div class="c-benefit__imgbox"><img src="./assets/img/modelhouse/model2.jpg" alt="実物を見て触って体感できます" class="c-benefit__img"></div>
         </div>
         <!-- Benefit 3 -->
         <div class="c-benefit__item">
@@ -104,7 +105,7 @@
               </p>
             </div>
           </div>
-          <img src="./assets/img/modelhouse/model3.jpg" alt="実物を見て触って体感できます" class="c-benefit__img">
+          <div class="c-benefit__imgbox"><img src="./assets/img/modelhouse/model3.jpg" alt="実物を見て触って体感できます" class="c-benefit__img"></div>
         </div>
       </div>
     </div>
@@ -168,7 +169,12 @@
 <!-- PRESENT SECTION -->
 <section class="c-present l-container--1204">
   <h2>
-    <a href="./"><img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner"></a>
+    <a href="./">
+      <picture>
+        <source srcset="./assets/img/sp/banner_presentsp.png" media="(max-width: 767px)">
+        <img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner">
+      </picture>
+    </a>
   </h2>
 </section>
 <!--END PRESENT SECTION -->

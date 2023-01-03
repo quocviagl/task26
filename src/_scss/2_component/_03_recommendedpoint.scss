@@ -3,23 +3,48 @@
     margin-top: 8.6%;
     position: relative;
     padding-top: 9.7%;
-    @include fixpc{
+    @include fixpc {
         padding-top: 16%;
     }
+    @include tab {
+        padding-top: 25%;
+        padding-bottom: 23%;
+    }
+    @include sp {
+        margin-top: 18.7%;
+        padding-top: 152px;
+    }
+
     .c-recommended__top {
         text-align: right;
         padding: 0 45px 0 500px;
     }
-    .c-recommended__car{
+
+    .c-recommended__car {
         position: absolute;
         left: 11.8%;
         top: -22.2%;
-        @include fixpc{
+
+        @include fixpc {
             width: 30%;
             left: 4.8%;
             top: -12.2%;
         }
+        @include tab {
+            left: auto;
+            top: auto;
+            right: 0;
+            bottom: -6%;
+        }
+        @include sp {
+            width: 217px;
+            left: auto;
+            top: auto;
+            right: -5px;
+            bottom: -6%;
+        }
     }
+
     .c-recommended__title {
         position: absolute;
         right: 2.6%;
@@ -30,9 +55,18 @@
         color: #000;
         text-transform: uppercase;
         font-family: $oswald;
-        @include fixpc{
+        @include fixpc {
             font-size: 6.3rem;
             top: -7.9%;
+        }
+        @include tab {
+            top: -4%;
+        }
+        @include sp {
+            font-size: 3.15rem;
+            letter-spacing: 2.5px;
+            top: -26px;
+            right: 4.2%;
         }
     }
 
@@ -44,6 +78,15 @@
         font-weight: 400;
         color: #231815;
         margin: -10px -3px 0 0;
+        @include tab {
+            top: 3.5%;
+        }
+        @include sp {
+            font-size: 1.25rem;
+            top: 4.3%;
+            letter-spacing: 0.8px;
+            right: 3%;
+        }
 
         &--colored {
             font-size: 4.6rem;
@@ -51,16 +94,35 @@
             color: #252a6d;
             font-family: $notoserif;
             margin-left: -8px;
+            @include sp {
+                font-size: 1.7rem;
+            }
         }
+
     }
 
     .c-recommended__bottom {
         padding: 0 56px 77px 77px;
         margin-top: -38px;
+        @include sp {
+            padding: 0;
+            margin-top: -78px;
+            padding-bottom: 123px;
+        }
     }
 
     .c-recommended__list {
         display: flex;
+        @include tab {
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+        @include sp {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 13px;
+        }
     }
 
     .c-recommended__item {
@@ -68,9 +130,24 @@
         width: 100%;
         padding: 22px 20px 44px;
         background-color: #fff;
+        @include sp {
+            width: calc((100% - 34px)/2);
+            padding: 11px 8px 16px 10px;
+        }
 
         &:not(:last-child) {
             margin-right: 25px;
+            @include tab {
+                margin-right: 0;
+            }
+            @include sp {
+                margin-right: 0;
+                
+            }
+        }
+
+        &:nth-child(2n+2) {
+            padding: 11px 10px 13px 8px;
         }
 
         &:nth-child(1) {
@@ -79,13 +156,39 @@
             }
 
             .c-item__description {
-                letter-spacing: 0.2px;
+                letter-spacing: 0;
                 padding-right: 3px;
+                line-height: 1.38;
             }
         }
-        &:nth-child(3){
-            .c-item__title{
+
+        &:nth-child(2) {
+            .c-item__description {
+                letter-spacing: -0.08px;
+                padding-right: 7px;
+                font-size: 0.95rem;
+                line-height: 1.35;
+                padding-top: 4px;
+                padding-left: 1px;
+            }
+        }
+
+        &:nth-child(3) {
+            .c-item__title {
                 letter-spacing: -0.3px;
+            }
+
+            .c-item__description {
+                line-height: 1.4;
+                letter-spacing: 0.1px;
+            }
+        }
+
+        &:nth-child(4) {
+            .c-item__description {
+                font-size: 0.95rem;
+                line-height: 1.4;
+                letter-spacing: 0.1px;
             }
         }
     }
@@ -94,7 +197,10 @@
         font-size: 2.3rem;
         font-weight: 400;
         color: #231815;
-
+        @include sp {
+            font-size: 1.1rem;
+            
+        }
     }
 
     .c-item__description {
@@ -103,9 +209,13 @@
         color: #231815;
         padding-top: 3.2%;
         line-height: 1.45;
+        @include sp {
+            font-size: 0.95rem;
+        }
     }
 
     .c-item__bottom {
         margin-top: 6.7%;
+
     }
 }
