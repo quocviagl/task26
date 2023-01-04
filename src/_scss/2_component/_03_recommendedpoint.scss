@@ -1,6 +1,6 @@
 .c-recommended {
     background: url("./assets/img/recommend/recommended_bg.png");
-    margin-top: 8.6%;
+    margin-top: 10.1%;
     position: relative;
     padding-top: 9.7%;
     @include fixpc {
@@ -11,7 +11,7 @@
         padding-bottom: 23%;
     }
     @include sp {
-        margin-top: 18.7%;
+        margin-top: 19.3%;
         padding-top: 152px;
     }
 
@@ -37,11 +37,11 @@
             bottom: -6%;
         }
         @include sp {
-            width: 217px;
+            width: 212px;
             left: auto;
             top: auto;
-            right: -5px;
-            bottom: -6%;
+            right: 0;
+            bottom: -5.56%;
         }
     }
 
@@ -107,7 +107,7 @@
         @include sp {
             padding: 0;
             margin-top: -78px;
-            padding-bottom: 123px;
+            padding-bottom: 122px;
         }
     }
 
@@ -147,7 +147,9 @@
         }
 
         &:nth-child(2n+2) {
-            padding: 11px 10px 13px 8px;
+            @include sp{
+                padding: 11px 10px 13px 8px;
+            }
         }
 
         &:nth-child(1) {
@@ -156,39 +158,56 @@
             }
 
             .c-item__description {
-                letter-spacing: 0;
-                padding-right: 3px;
-                line-height: 1.38;
+                padding-right: 6px;
+                @include sp{
+                    letter-spacing: 0;
+                    padding-right: 3px;
+                    line-height: 1.38;
+                }
             }
         }
 
         &:nth-child(2) {
+
             .c-item__description {
-                letter-spacing: -0.08px;
-                padding-right: 7px;
-                font-size: 0.95rem;
-                line-height: 1.35;
-                padding-top: 4px;
-                padding-left: 1px;
+                @include sp{
+
+                    letter-spacing: -0.08px;
+                    padding-right: 7px;
+                    font-size: 0.95rem;
+                    line-height: 1.35;
+                    padding-top: 4px;
+                    padding-left: 1px;
+                }
             }
         }
 
         &:nth-child(3) {
             .c-item__title {
-                letter-spacing: -0.3px;
+                letter-spacing: 0;
+                margin-right: -3px;
+                
             }
 
             .c-item__description {
-                line-height: 1.4;
-                letter-spacing: 0.1px;
+                @include sp{
+
+                    line-height: 1.4;
+                    letter-spacing: 0.1px;
+                    padding-top: 6px;
+                    padding-left: 1px;
+                }
             }
         }
 
         &:nth-child(4) {
             .c-item__description {
-                font-size: 0.95rem;
-                line-height: 1.4;
-                letter-spacing: 0.1px;
+                @include sp{
+
+                    font-size: 0.95rem;
+                    line-height: 1.4;
+                    letter-spacing: 0.1px;
+                }
             }
         }
     }

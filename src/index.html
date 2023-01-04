@@ -229,11 +229,11 @@
   <div class="c-plan__quickview">
     <dl class="c-plan__quickviewitem">
       <dt class="c-plan__name"> 商品プラン </dt>
-      <dd class="u-spacing--1px"> ZERO-CUBE </dd>
+      <dd class="c-plan__itemdes u-spacing--1px"> ZERO-CUBE </dd>
     </dl>
     <dl class="c-plan__quickviewitem">
       <dt class="c-plan__name"> 構造 </dt>
-      <dd> 木造2階建て </dd>
+      <dd class="c-plan__itemdes"> 木造2階建て </dd>
     </dl>
     <dl class="c-plan__quickviewitem">
       <dt class="c-plan__name"> 設備・仕様 </dt>
@@ -242,7 +242,7 @@
         <p><a class="c-plan__itemlink" href="./">無垢材・自然素材</a></p>
         <p><a class="c-plan__itemlink" href="./">高性能住宅</a></p>
         <p><a class="c-plan__itemlink" href="./">玄関共有タイプ</a></p>
-        <p><a class="c-plan__itemlink" href="./">防音構造床</a></p>
+        <p><a class="c-plan__itemlink u-tag--fixmargin" href="./">防音構造床</a></p>
       </dd>
     </dl>
     <dl class="c-plan__quickviewitem">
@@ -339,9 +339,11 @@
       <div class="c-prevention__heading">
         <div class="c-prevention__heading--top">
           <a href="#" class="c-prevention__btn">ご来場のお客様へ</a>
-          <h2 class="c-prevention__title">新型コロナウイルス感 染症予 防対 策につきまして</h2>
+          <h2 class="c-prevention__title">新型コロナウイルス <span class="c-prevention__title--sp">感 染症予 防対 策につきまして</span></h2>
         </div>
-        <h3 class="c-prevention__subtitle">ウェブココでは 新型 コロナウイルス感 染拡 大防 止 のため、対策を講じておりますので安心してご利用ください。</h3>
+        <h3 class="c-prevention__subtitle">ウェブココでは 新型 コロナウイルス
+          <span class="c-prevention__subtitle--sp">感 染拡 大防 止 のため、対策を講じて</span>
+          <span class="c-prevention__subtitle--sp">おりますので安心してご利用ください。</span></h3>
       </div>
         <!-- PREVENTION LIST-->
       <div class="c-prevention__list">
@@ -386,7 +388,14 @@
   </div>
 </section>
 <section class="c-present c-present--footer l-container--1204">
-  <h2><a href="./"><img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner"></a></h2>
+  <h2>
+    <a href="./">
+      <picture>
+        <source srcset="./assets/img/sp/banner_presentsp.png" media="(max-width: 767px)">
+        <img src="./assets/img/present.png" alt="PRESENT BANNER" class="c-present__banner">
+      </picture>
+    </a>
+  </h2>
 </section>
 <section class="c-contact l-container--1204">
   <a href="#">

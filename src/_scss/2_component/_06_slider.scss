@@ -12,8 +12,11 @@
     padding: 0;
     border: hidden;
 }
-.slick-slide{
+
+.slick-slider{
     
+    width: 96%;
+
 }
 
 .slick-prev {
@@ -23,11 +26,11 @@
     background: url("./assets/img/slick/previous.svg");
     width: 53px;
     height: 53px;
-    @include sp{
-        left: calc(100% - 76px);
-        bottom: -22%;
-        width: 32px;
-        height: 32px;
+    @include sp {
+        left: calc(100% - 77px);
+        bottom: -21%;
+        width: 31px;
+        height: 31px;
     }
 }
 
@@ -38,10 +41,10 @@
     background: url("./assets/img/slick/next.svg");
     width: 53px;
     height: 53px;
-    @include sp{
-        left: calc(100% - 33px);
-        bottom: -22%;
-        width: 32px;
-        height: 32px;
+    @include sp {
+        left: calc(100% - 34px);
+        bottom: -21%;
+        width: 31px;
+        height: 31px;
     }
 }

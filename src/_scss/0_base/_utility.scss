@@ -1,5 +1,8 @@
 .u-spacing--1px {
     letter-spacing: 1px;
+    @include sp {
+        letter-spacing: 0.7px;
+    }
 }
 
 .u-spacing--negative2px {

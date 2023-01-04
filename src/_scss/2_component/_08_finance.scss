@@ -15,6 +15,11 @@
         letter-spacing: 4.5px;
         position: relative;
         padding-top: 93px;
+        @include sp {
+            font-size: 2.4rem;
+            padding-top: 35px;
+            letter-spacing: 2.2px;
+        }
 
         &::after {
             content: "";
@@ -25,7 +30,10 @@
             bottom: -18%;
             left: 50%;
             transform: translate(-50%, -50%);
-
+            @include sp {
+                width: 30px;
+                bottom: -20%;
+            }
         }
     }
 
@@ -46,6 +54,15 @@
         margin: 5.95% 0 0 0.6%;
         letter-spacing: 0.5px;
         padding-top: 0.5%;
+        @include sp {
+            font-size: 1.5rem;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 42px;
+            margin-left: 0;
+            padding: 4px 28px 6px;
+            letter-spacing: 0.2px;
+        }
     }
 
     .c-finance__content {
@@ -57,6 +74,10 @@
             align-items: center;
             row-gap: 80px;
         }
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .c-finance__box {
@@ -66,6 +87,9 @@
         position: relative;
         letter-spacing: 0.8px;
         color: #231815;
+        @include sp {
+            width: 80.6%;
+        }
 
         &--leftbox {
             margin-left: 0.6%;
@@ -78,6 +102,17 @@
                 width: 100%;
                 padding: 62px 24px;
                 margin: 0;
+            }
+            @include sp {
+                max-width: 300px;
+                margin-left: 0;
+                top: 10px;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                letter-spacing: 3px;
+                padding: 45px 0 33px;
+                text-align: center;
             }
         }
 
@@ -94,6 +129,12 @@
                 padding: 75px 0 67px 40px;
                 margin: 0;
             }
+            @include sp {
+                max-width: 300px;
+                padding: 51px 39px 54px;
+                margin: 38px 0 0;
+                left: 0;
+            }
         }
     }
 
@@ -106,6 +147,11 @@
         @include tab {
             font-size: 1.9rem;
         }
+        @include sp {
+            font-size: 1.1rem;
+            letter-spacing: -0.3px;
+            margin-left: -14px;
+        }
     }
 
     .c-finance__smalltitle {
@@ -114,6 +160,9 @@
         color: #231815;
         margin-left: 8px;
         letter-spacing: 0;
+        @include sp {
+            font-size: 1.3rem;
+        }
     }
 
     .c-finance__number {
@@ -127,12 +176,22 @@
         @include tab {
             margin-top: 4%;       
         }
+        @include sp {
+            font-size: 4.5rem;
+            margin-left: 3px;
+            margin-top: 1px;
+            
+        }
 
         &--unit {
             font-size: 3.6rem;
             position: relative;
             top: 2px;
             left: 9px;
+            @include sp {
+                font-size: 1.8rem;
+                left: 4px;
+            }
         }
     }
 
@@ -144,6 +203,12 @@
         letter-spacing: -0.4px;
         @include tab {
             font-size: 1.9rem;
+        }
+        @include sp {
+            font-size: 1.1rem;
+            margin-left: 4px;
+            margin-top: 7px;
+            letter-spacing: -0.15px;
         }
     }
 
@@ -171,6 +236,14 @@
             width: 180px;
             height: 180px;
         }
+        @include sp {
+            top: -9px;
+            right: -21px;
+            width: 100px;
+            height: 100px;
+            padding-top: 12px;
+            padding-left: 4px;
+        }
 
         &::before {
             content: "";
@@ -188,11 +261,23 @@
                 top: 130px;
                 left: 6px;
             }
+            @include sp {
+                width: 31px;
+                height: 34px;
+                top: 56px;
+                left: -4px;
+            }
         }
 
         .c-bubble__heading {
             font-size: 3.2rem;
             font-weight: 700;
+            @include sp {
+                font-size: 1.6rem;
+                letter-spacing: 0.5px;
+                position: relative;
+                left: -1px;
+            }
         }
 
         .c-bubble__number {
@@ -201,12 +286,21 @@
             position: relative;
             top: -20.5%;
             left: -2.4%;
+            @include sp {
+                font-size: 4.8rem;
+
+            }
 
             &--unit {
                 font-size: 3.2rem;
                 position: relative;
                 top: -11px;
                 left: 7px;
+                @include sp {
+                    font-size: 1.6rem;
+                    top: -5px;
+                    left: 3px;
+                }
             }
         }
     }

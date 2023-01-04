@@ -10,5 +10,9 @@
 
     &--footer {
         margin-top: 4.6%;
+        @include sp {
+            margin-top: 3px;
+            padding: 41px 28px 0;
+        }
     }
 }

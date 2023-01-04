@@ -1,18 +1,30 @@
 .c-access {
     display: flex;
     margin-top: 5.8%;
+    background-color: #ededed;
     @include tab {
         flex-direction: column;
         align-items: center;
     }
+    @include sp {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 33%;
+    }
 
     .c-access__item {
         width: 50%;
+        @include sp {
+            width: 100%;
+        }
 
         &--text {
             text-align: center;
             background-color: #ededed;
             padding-bottom: 6.6%;
+            @include sp {
+                padding-bottom: 10.5%;
+            }
         }
     }
 
@@ -23,6 +35,10 @@
         @include tab {
             left: auto;
         }
+        @include sp {
+            padding-top: 7.2%;
+            left: 0;
+        }
 
         .c-access__title {
             text-transform: uppercase;
@@ -32,6 +48,11 @@
             color: #000;
             position: relative;
             letter-spacing: 4.5px;
+            @include sp {
+                font-size: 2.4rem;
+                margin-left: 18px;
+                letter-spacing: 2.5px;
+            }
 
             &::after {
                 content: "";
@@ -41,7 +62,9 @@
                 position: absolute;
                 bottom: -24%;
                 left: 45.7%;
-    
+                @include sp {
+                    left: 40%;
+                }
             }
         }
 
@@ -51,6 +74,12 @@
             color: #000;
             margin-top: 4.5%;
             letter-spacing: 0.9px;
+            @include sp {
+                font-size: 1.4rem;
+                letter-spacing: 0;
+                margin-left: 18px;
+                margin-top: 21px;
+            }
         }
 
     }
@@ -60,6 +89,10 @@
         height: 100%;
         @include tab {
             height: 500px;
+            padding-top: 30px;
+        }
+        @include sp {
+            height: 290px;
         }
     }
 
@@ -79,9 +112,11 @@
             padding-left: 10px;
         }
         @include tab {
-            padding-right: 0;
-            padding: 0 30px;
+            padding: 0 0 0 62px;
             margin-bottom: 3%;
+        }   
+        @include sp {
+            padding: 9px 0 0 62px;
         }
 
         &:nth-child(1) {
@@ -90,15 +125,37 @@
                 position: relative;
                 top: -3px;
                 left: 2px;
+                @include sp {
+                    letter-spacing: 2.5px;
+                    top: -2px;
+                    left: -10px;
+                }
             }
         }
 
         &:nth-child(2) {
+            padding: 0 0 0 62px;
+
             .c-access__description {
                 position: relative;
                 left: 3px;
+                @include sp {
+                    left: -10px;
+                }
             }
 
+        }
+
+        &:nth-child(3) {
+            padding: 0 0 0 62px;
+
+            .c-access__description {
+                @include sp {
+                    position: relative;
+                    left: -12px;
+                    top: 2px;
+                }
+            }
         }
 
         .c-access__label {
@@ -109,6 +166,11 @@
             background-color: #565f64;
             max-width: 120px;
             width: 100%;
+            @include sp {
+                font-size: 1.25rem;
+                width: 26%;
+                padding: 3px 0;
+            }
         }
 
         .c-access__description {
@@ -121,6 +183,9 @@
             @include tab {
                 font-size: 2rem;
             }
+            @include sp {
+                font-size: 1.25rem;
+            }
 
             &--fixspacing {
                 position: relative;
@@ -129,13 +194,19 @@
             }
         }
 
-        .c-access__note {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: #000;
-            margin-top: 1.4%;
-            margin-left: 11%;
-            letter-spacing: 1px;
+    }
+
+    .c-access__note {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #000;
+        margin-top: 1.4%;
+        margin-left: 11%;
+        letter-spacing: 1px;
+        @include sp {
+            font-size: 0.8rem;
+            margin-left: 25%;
+            letter-spacing: 0;
         }
     }
 
